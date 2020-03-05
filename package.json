@@ -1,5 +1,5 @@
 {
-  "name": "two-twitters",
+  "name": "ON-libraries",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,11 @@
   "author": "German Arcila",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "googlemaps": "^1.12.0",
     "nodemon": "^1.19.4",
-    "twitter": "^1.7.1"
+    "objects-to-csv": "^1.3.6"
   }
 }
