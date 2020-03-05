@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🐦 Twitter Feed 🐦</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+
+  <body class="container">
+    <div class="title-bar">
+      <div class="emoji-bird">🐧</></div>
+      <h2 class="title">2 Tweets 2 Text</h2>
+    </div>
+    <div class="tweet-handles">
+      <div class="handle-group">
+        <h4>Twitter handle One</h4>
+        <input type="text" id="handle1" class="form-control"  placeholder="space_station"/>
+      </div>
+      <div class="handle-group">
+        <h4>Twitter handle Two</h4>
+        <input type="text" id="handle2" class="form-control"  placeholder="nasa"/>
+      </div>
+    </div>
+    <div class="spinner"></div>
+    <div class="submit">
+      <button type="submit"
+      class="submit-handles"
+      id="submit"
+      >Submit
+      </button>
+    </div>
+    <div class="copy-results">
+      <div class="align">
+      <button class="copy-one">copy text One</button>
+      <button class="copy-two">copy text Two</button>
+    </div>
+    </div>
+    <div class="tweets-text">
+      <div class="tweet-one-box">
+        <h3 class="bird">🐧 <span class="bird1">@</span></h3>
+        <div class="user-one"></div>
+      </div>
+      <div class="tweets-two-box">
+        <h3 class="bird">🐦 <span class="bird2">@</span></h3>
+        <div class="user-two"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      🐧🐦 not built by a 🤖
+    </footer>
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/assets/js/scripts.js"></script>
+<script>
+  // // copy to memory tweets text
+  // $('.copy-one').on('click', function(event){
+  //   event.preventDefault();
+  //   var $temp = $("<input>");
+  //   $("body").append($temp);
+  //   $temp.val($('.user-one').text()).select();
+  //   document.execCommand("copy");
+  //   $temp.remove();
+  // })
+  // $('.copy-two').on('click', function(event){
+  //   event.preventDefault();
+  //   var $temp = $("<input>");
+  //   $("body").append($temp);
+  //   $temp.val($('.user-two').text()).select();
+  //   document.execCommand("copy");
+  //   $temp.remove();
+  // })
+
+  // // capture the form inputs
+  // $('#submit').on('click', function(event) {
+  //   event.preventDefault();
+  //   $('.spinner').show();
+
+  //   // Form validation
+  //   function validateForm() {
+  //     var isValid = true;
+  //     $('.form-control').each(function() {
+  //       if ($(this).val() === '') {
+  //         isValid = false;
+  //       }
+  //     });
+  //     return isValid;
+  //   }
+
+  //   if (validateForm()) {
+  //     var userData = {
+  //       handle1: $('#handle1').val(),
+  //       handle2: $('#handle2').val(),
+  //     };
+
+  //     // post the data to the tweets API.
+  //     $.get(
+  //       '/api/tweets/' + userData.handle1 + '/' + userData.handle2,
+  //       function(data) {
+  //         $('.user-one').text(data.user1);
+  //         $('.user-two').text(data.user2);
+  //         $('.bird1').text(userData.handle1);
+  //         $('.bird2').text(userData.handle2);
+  //         $('.copy-results').show('slow');
+  //         $('#handle1').val('');
+  //         $('#handle2').val('');
+  //         $('.spinner').hide();
+  //       }
+  //     );
+  //   } else {
+  //     alert('Please fill out all fields before submitting!');
+  //   }
+  // });
+</script>
